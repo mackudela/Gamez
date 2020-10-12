@@ -8,10 +8,10 @@
 
 extern Game* game; // there is an external global object called game
 
-Bullet::Bullet(QGraphicsItem* parent): QObject(), QGraphicsRectItem(parent)
+Bullet::Bullet(QGraphicsItem* parent): QObject(), QGraphicsPixmapItem(parent)
 {
-	// draw the bullet (a rectangle)
-	setRect(0, 0, 10, 50);
+	// draw graphics
+	setPixmap(QPixmap(":/images/bullet1.png"));
 
 	// connect a timer to move() the bullet every so often
 	QTimer* timer = new QTimer(this);
@@ -49,7 +49,7 @@ void Bullet::move()
 
 	// if there was no collision with an Enemy, move the bullet forward
 	setPos(x(), y() - 10);
-	if (pos().y() + rect().height() < 0)	// if a bullet gets to the top of the scene, delete it
+	if (pos().y() + pixmap().height() < 0)	// if a bullet gets to the top of the scene, delete it
 	{
 		scene()->removeItem(this); // but first you have to remove it from the scene
 		delete(this);

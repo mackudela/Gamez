@@ -1,4 +1,9 @@
 <RCC>
-    <qresource prefix="MainWindow">
+    <qresource prefix="/images">
+        <file>background.jpg</file>
+        <file>bullet1.png</file>
+        <file>enemy1.png</file>
+        <file>enemy2.png</file>
+        <file>playership.png</file>
     </qresource>
 </RCC>

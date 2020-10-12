@@ -7,14 +7,14 @@
 
 extern Game* game;
 
-Enemy::Enemy(QGraphicsItem* parent): QObject(), QGraphicsRectItem(parent)
+Enemy::Enemy(QGraphicsItem* parent): QObject(), QGraphicsPixmapItem(parent)
 {
 	//set random x position
 	int random_number = rand() % 700; // reszta z dzielenia przez 100 ¿eby przeciwnicy spawnili siê wewn¹trz sceny
 	setPos(random_number, 0);
 
-	// draw the rect
-	setRect(0, 0, 100, 100);
+	// draw the image
+	setPixmap(QPixmap(":/images/enemy2.png"));
 
 	// connect a timer to move() the enemy every so often
 	QTimer* timer = new QTimer(this);

@@ -1,10 +1,10 @@
 #pragma once
-#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
 #include <QObject>
 #include <QGraphicsItem>
 
 // Any class that wants to use signals and slots has to derive from QObject
-class Enemy: public QObject, public QGraphicsRectItem
+class Enemy: public QObject, public QGraphicsPixmapItem
 {
 	Q_OBJECT // !!!!!!!!!!!!!!!!!!! and make this thing
 public:

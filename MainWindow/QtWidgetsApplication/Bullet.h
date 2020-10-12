@@ -1,10 +1,10 @@
 #pragma once
-#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
 #include <QGraphicsItem>
 #include <QObject>
 
 // Any class that wants to use signals and slots has to derive from QObject
-class Bullet : public QObject, public QGraphicsRectItem
+class Bullet : public QObject, public QGraphicsPixmapItem
 {
 	Q_OBJECT // !!!!!!!!!!!!!!!!!!! and make this thing
 public:

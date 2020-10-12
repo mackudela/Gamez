@@ -4,9 +4,10 @@
 #include <QGraphicsScene>
 #include "Enemy.h"
 
-Player::Player(QGraphicsItem* parent) : QGraphicsRectItem(parent)
+Player::Player(QGraphicsItem* parent) : QGraphicsPixmapItem(parent)
 {
-
+	// set graphic
+	setPixmap(QPixmap(":/images/playership.png"));
 }
 
 void Player::keyPressEvent(QKeyEvent* event)
