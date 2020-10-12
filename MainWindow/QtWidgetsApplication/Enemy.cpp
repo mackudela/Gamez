@@ -25,6 +25,28 @@ Enemy::Enemy(QGraphicsItem* parent): QObject(), QGraphicsPixmapItem(parent)
 
 void Enemy::move()
 {
+	// if an enemy hits player, decrease life and destroy the enemy
+	QList <QGraphicsItem*> colliding_items = collidingItems();
+
+	// if this enemy hits player, destroy it and decrease life
+	for (int i = 0, n = colliding_items.size(); i < n; i++)
+	{
+		if (typeid(*(colliding_items[i])) == typeid(Player))
+		{
+			// decrease the life
+			game->health->decrease();
+
+			// remove an enemy from the scene
+			scene()->removeItem(this);
+
+			// delete an enemy
+			delete this;
+
+			// return, cause all code below refers to a non existing enemy
+			return;
+		}
+	}
+
 	// move the enemy down
 	setPos(x(), y() + 5);
 

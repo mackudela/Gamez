@@ -3,6 +3,9 @@
 #include "Bullet.h"
 #include <QGraphicsScene>
 #include "Enemy.h"
+#include <QList>
+#include "Game.h"
+
 
 Player::Player(QGraphicsItem* parent) : QGraphicsPixmapItem(parent)
 {
