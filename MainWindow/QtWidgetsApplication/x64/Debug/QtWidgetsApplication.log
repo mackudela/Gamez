@@ -1,2 +1,22 @@
-﻿  Enemy.cpp
+﻿  Bullet.cpp
+  Enemy.cpp
+  Player.cpp
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(16,29): warning C4584: „PlayerBullet”: klasa bazowa „QObject” jest już klasą bazową „Bullet” (kompilowanie pliku źródłowego Bullet.cpp)
+C:\Qt\5.15.1\msvc2019_64\include\QtCore\qobject.h(127): message : zobacz deklarację „QObject” (kompilowanie pliku źródłowego Bullet.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(7): message : zobacz deklarację „Bullet” (kompilowanie pliku źródłowego Bullet.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(25,28): warning C4584: „EnemyBullet”: klasa bazowa „QObject” jest już klasą bazową „Bullet” (kompilowanie pliku źródłowego Bullet.cpp)
+C:\Qt\5.15.1\msvc2019_64\include\QtCore\qobject.h(127): message : zobacz deklarację „QObject” (kompilowanie pliku źródłowego Bullet.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(7): message : zobacz deklarację „Bullet” (kompilowanie pliku źródłowego Bullet.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(16,29): warning C4584: „PlayerBullet”: klasa bazowa „QObject” jest już klasą bazową „Bullet” (kompilowanie pliku źródłowego Player.cpp)
+C:\Qt\5.15.1\msvc2019_64\include\QtCore\qcoreevent.h(347): message : zobacz deklarację „QObject” (kompilowanie pliku źródłowego Player.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(7): message : zobacz deklarację „Bullet” (kompilowanie pliku źródłowego Player.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(25,28): warning C4584: „EnemyBullet”: klasa bazowa „QObject” jest już klasą bazową „Bullet” (kompilowanie pliku źródłowego Player.cpp)
+C:\Qt\5.15.1\msvc2019_64\include\QtCore\qcoreevent.h(347): message : zobacz deklarację „QObject” (kompilowanie pliku źródłowego Player.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(7): message : zobacz deklarację „Bullet” (kompilowanie pliku źródłowego Player.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(16,29): warning C4584: „PlayerBullet”: klasa bazowa „QObject” jest już klasą bazową „Bullet” (kompilowanie pliku źródłowego Enemy.cpp)
+C:\Qt\5.15.1\msvc2019_64\include\QtCore\qbasictimer.h(49): message : zobacz deklarację „QObject” (kompilowanie pliku źródłowego Enemy.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(7): message : zobacz deklarację „Bullet” (kompilowanie pliku źródłowego Enemy.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(25,28): warning C4584: „EnemyBullet”: klasa bazowa „QObject” jest już klasą bazową „Bullet” (kompilowanie pliku źródłowego Enemy.cpp)
+C:\Qt\5.15.1\msvc2019_64\include\QtCore\qbasictimer.h(49): message : zobacz deklarację „QObject” (kompilowanie pliku źródłowego Enemy.cpp)
+D:\VS Projects\MainWindow\QtWidgetsApplication\Bullet.h(7): message : zobacz deklarację „Bullet” (kompilowanie pliku źródłowego Enemy.cpp)
   QtWidgetsApplication.vcxproj -> D:\VS Projects\MainWindow\x64\Debug\QtWidgetsApplication.exe

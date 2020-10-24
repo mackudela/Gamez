@@ -17,7 +17,7 @@ Game::Game(QWidget* parent)
 	setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 	setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 	setFixedSize(800, 600);
-
+	
 	// create the player
 	player = new Player();
 	//player->setRect(0, 0, 100, 100); // change the rect from 0x0 to 100x100 pixels

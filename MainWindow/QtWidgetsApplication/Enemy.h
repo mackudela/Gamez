@@ -11,4 +11,5 @@ public:
 	Enemy(QGraphicsItem* parent = 0);
 public slots: // slot = a member function that can be connected to a signal !
 	void move(); // slot called move
+	void moveBullet();
 };

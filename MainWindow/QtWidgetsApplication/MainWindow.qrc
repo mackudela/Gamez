@@ -5,5 +5,7 @@
         <file>enemy1.png</file>
         <file>enemy2.png</file>
         <file>playership.png</file>
+        <file>bullet2.png</file>
+        <file>bullet3.png</file>
     </qresource>
 </RCC>

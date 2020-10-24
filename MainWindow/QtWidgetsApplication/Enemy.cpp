@@ -4,13 +4,14 @@
 #include <QList>
 #include <stdlib.h> // rand() -> really large int
 #include "Game.h"
+#include "Bullet.h"
 
 extern Game* game;
 
 Enemy::Enemy(QGraphicsItem* parent): QObject(), QGraphicsPixmapItem(parent)
 {
 	//set random x position
-	int random_number = rand() % 700; // reszta z dzielenia przez 100 ¿eby przeciwnicy spawnili siê wewn¹trz sceny
+	int random_number = rand() % 700; // reszta z dzielenia przez 700 ¿eby przeciwnicy spawnili siê wewn¹trz sceny
 	setPos(random_number, 0);
 
 	// draw the image
@@ -20,7 +21,12 @@ Enemy::Enemy(QGraphicsItem* parent): QObject(), QGraphicsPixmapItem(parent)
 	QTimer* timer = new QTimer(this);
 	connect(timer, SIGNAL(timeout()), this, SLOT(move())); // connects timer to the move slot of this bullet
 
+	// connect a timer to fire a bullet 
+	QTimer* bulletTimer = new QTimer(this);
+	connect(bulletTimer, SIGNAL(timeout()), this, SLOT(moveBullet()));
+
 	timer->start(50); // 50 miliseconds -- every 50 miliseconds the bullet will move :D
+	bulletTimer->start(2000);
 }
 
 void Enemy::move()
@@ -46,8 +52,8 @@ void Enemy::move()
 			return;
 		}
 	}
+	
 
-	// move the enemy down
 	setPos(x(), y() + 5);
 
 	if (pos().y() > 600)	// if an enemy gets to the bottom of the scene, delete it
@@ -59,3 +65,11 @@ void Enemy::move()
 		delete(this);
 	}
 }
+
+void Enemy::moveBullet()
+{
+	EnemyBullet* bullet = new EnemyBullet(); // create a bullet
+	bullet->setPos(x()+48, y()+93);
+	scene()->addItem(bullet);
+}
+

@@ -88,6 +88,7 @@
   <ItemGroup>
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyBullet.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Health.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -102,6 +103,7 @@
     <QtMoc Include="Player.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EnemyBullet.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Health.h" />
     <ClInclude Include="Score.h" />

@@ -5,6 +5,7 @@
 #include "Enemy.h"
 #include <QList>
 #include "Game.h"
+#include <QTimer>
 
 
 Player::Player(QGraphicsItem* parent) : QGraphicsPixmapItem(parent)
@@ -28,8 +29,8 @@ void Player::keyPressEvent(QKeyEvent* event)
 	}
 	else if (event->key() == Qt::Key_Space) // sshoot with the spacebar
 	{
-		Bullet* bullet = new Bullet();  // create a bullet
-		bullet->setPos(x(), y());
+		PlayerBullet* bullet = new PlayerBullet();  // create a bullet
+		bullet->setPos(x()+32, y());
 		scene()->addItem(bullet); // add bullet to the scene
 	}
 }
