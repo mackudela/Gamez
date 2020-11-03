@@ -90,9 +90,11 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyBullet.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Gameplayer.cpp" />
     <ClCompile Include="Health.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Score.cpp" />
+    <ClCompile Include="Scorelist.cpp" />
     <QtRcc Include="MainWindow.qrc" />
     <QtUic Include="MainWindow.ui" />
     <ClCompile Include="main.cpp" />
@@ -105,8 +107,10 @@
   <ItemGroup>
     <ClInclude Include="EnemyBullet.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Gameplayer.h" />
     <ClInclude Include="Health.h" />
     <ClInclude Include="Score.h" />
+    <ClInclude Include="Scorelist.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
